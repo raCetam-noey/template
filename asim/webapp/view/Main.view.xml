@@ -1,7 +1,31 @@
-<mvc:View controllerName="asim.controller.Main"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+<mvc:View controllerName="asim.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <content />
+        <content>
+            <!-- panel for tile -->
+            <Panel id="tileContainer" headerText="1차 개발" class="sapUiResponsiveMargin" >
+                <content>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="수입 계약" subheader="" press="navTo($event, 'IM01')">
+                        <TileContent >
+                            <ImageContent src="sap-icon://document"/>
+                        </TileContent>
+                    </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="수입 BL" subheader="" press="navTo($event, 'BL01')">
+                        <TileContent >
+                            <ImageContent src="sap-icon://document"/>
+                        </TileContent>
+                    </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="수입 통관" subheader="" press="navTo($event, 'IC01')">
+                        <TileContent >
+                            <ImageContent src="sap-icon://document"/>
+                        </TileContent>
+                    </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="수입 부대비" subheader="" press="navTo($event, 'EX01')">
+                        <TileContent >
+                            <ImageContent src="sap-icon://document"/>
+                        </TileContent>
+                    </GenericTile>
+                </content>
+            </Panel>
+        </content>
     </Page>
 </mvc:View>

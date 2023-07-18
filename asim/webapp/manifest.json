@@ -43,6 +43,7 @@
         }
     },
     "sap.ui": {
+        "fullWidth": true,
         "technology": "UI5",
         "icons": {
             "icon": "",
@@ -114,6 +115,41 @@
                     "target": [
                         "TargetMain"
                     ]
+                },
+                {
+                    "name": "RouteNotFound",
+                    "pattern": "NotFound",
+                    "target": [
+                        "TargetNotFound"
+                    ]
+                },
+                {
+                    "name" : "IM01",
+                    "pattern" : "IM01",
+                    "target" : [
+                        "TargetIM"
+                    ]
+                },
+                {
+                    "name": "BL01",
+                    "pattern": "BL01",
+                    "target": [
+                        "TargetBL"
+                    ]
+                },
+                {
+                    "name": "IC01",
+                    "pattern": "IC01",
+                    "target": [
+                        "TargetIC"
+                    ]
+                },
+                {
+                    "name": "EX01",
+                    "pattern": "EX01",
+                    "target": [
+                        "TargetEX"
+                    ]
                 }
             ],
             "targets": {
@@ -123,6 +159,46 @@
                     "clearControlAggregation": false,
                     "viewId": "Main",
                     "viewName": "Main"
+                },
+                "TargetNotFound": {
+                    "viewType": "XML",
+                    "transition": "show",
+                    "clearControlAggregation": false,
+                    "viewId": "NotFound",
+                    "viewName": "NotFound"
+                },
+                "TargetIM": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "IM",
+                    "viewName": "IM01",
+                    "viewPath": "asim.view.IM"
+
+                },
+                "TargetBL": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "BL01",
+                    "viewName": "BL01",
+                    "viewPath": "asim.view.BL"
+                },
+                "TargetIC": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "IC01",
+                    "viewName": "IC01",
+                    "viewPath": "asim.view.IC"
+                },
+                "TargetEX": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "EX01",
+                    "viewName": "EX01",
+                    "viewPath": "asim.view.EX"
                 }
             }
         },
