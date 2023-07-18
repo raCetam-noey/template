@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "2.6"
+metadata:
+  name: asim
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: PUBLIC_KEYUSER_SAML_ASSERTION_CLONING
+          url: https://my401637-api.s4hana.cloud.sap
+        app:
+          name: YY1_ASIM
+          package: TEST_YY1_DEFAULT
+          transport: ""
+        exclude:
+          - /test/
